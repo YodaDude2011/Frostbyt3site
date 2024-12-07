@@ -5,41 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frostbyt3 Software</title>
     <Style>
-        Body{
-            background-color: darkgrey;
+        body{
+            background-color: grey;
+            font-family: "Poppins", sans-serif;
         }
         h1{
             text-align: center;
+            
         }
-        h2{
+        h2 {
             text-align: center;
+            font-weight: lighter;
         }
-        .logo_img{
+        .grid{
+            display: flex;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 7px;
+            padding: 5px;
+            grid-auto-rows: auto;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .item{
+            background-color: rgb(74, 153, 163);
+            box-shadow: 3px 3px grey;
+            padding: 10px;
             text-align: center;
+            font-size: 18px;
+            max-height: 100%;
+            width: 20%;
+        }
+        .item:hover {
+        transform:scale(1.05)
+      }
+      .clickable{
+        background-color: seashell ;
+        border-radius: 5px;
+      }
+      button:hover{
+        color: white;
+        background-color: cadetblue;
+        transform: scale(1.02);
+      }
+      a {
+        text-decoration: none;
+        color: black;
+    
+    }
+    @media (max-width: 768px) {
+           .grid{
+           /* grid-template-columns: repeat(1, 1fr); */
+           flex-direction: column;
+           }
+           .item{
+            width: 100%;
+           }
+         
         }
     </Style>
 </head>
 <body>
+    <div class="grid">
+        <div class="item">
+            <a href="about.html" class="button">About Us</a>
+        </div>
+        <div class="item">
+            <a href="downloads.html" class="button">Downloads</a>
+        </div>
+        <div class=" item">
+            <a href="Contact.html" class="button">Contact Us</a>
+        </div>
+    </div>
     <div>
          <h1> Welcome to Frostbyt3!</h1>
+         <hr>
+         <h2> Frosbyt3 is a small online community that hosts gaming servers for its members to enjoy</h2>
         <br>
-        <h2>This site is currently under construction, things may be broken or may be displayed correctly</h2> 
         
     </div>
-    <div class="logo_img">
-        <img  src="./images/logo.png" alt="The Frostbyt3 Logo">
+    <div style="text-align: center;">
+        <img src="./images/logo.png" alt="The Frostbyt3 Logo">
     </div>
-    <div>
+    <div style="text-align: center;">
         <iframe src="https://discord.com/widget?id=889957986192228423&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-        <br>
-        <br>
-        <a href="about.html">About us!</a>
-        <br>
-        <br>
-        <a href="downloads.html">Downloads!</a>
+ 
     </div>
     <br>
-    <p style="text-align: right; font-size: small;">Updated: 11/4/24</p>
+    <p style="text-align: right; font-size: small;">Updated: 12/6/24</p>
   
 </body>
 </html>

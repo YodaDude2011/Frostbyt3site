@@ -5,14 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frostbyt3 Software - About Us</title>
     <style>
+        
         body{
-            background-color: darkgrey;
-            text-align: left;
-            font-size: large;
+            background-color: grey;
+            font-family: "Poppins", sans-serif;
+        }
+        h1{
+            text-align: center;
+            
+        }
+        .grid{
+            display: flex;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 7px;
+            padding: 5px;
+            grid-auto-rows: auto;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .item{
+            background-color: rgb(74, 153, 163);
+            box-shadow: 3px 3px grey;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+            max-height: 100%;
+            width: 20%;
+        }
+        .item:hover {
+        transform:scale(1.05)
+      }
+      .clickable{
+        background-color: seashell ;
+        border-radius: 5px;
+      }
+      button:hover{
+        color: white;
+        background-color: cadetblue;
+        transform: scale(1.02);
+      }
+      a {
+        text-decoration: none;
+        color: black;
+    
+    }
+    @media (max-width: 768px) {
+           .grid{
+           /* grid-template-columns: repeat(1, 1fr); */
+           flex-direction: column;
+           }
+           .item{
+            width: 100%;
+           }
+         
         }
     </style>
 </head>
 <body>
+    <div class="grid">
+        <div class="item">
+            <a href="index.html" class="button">Home</a>
+        </div>
+        <div class="item">
+            <a href="about.html" class="button">About Us</a>
+        </div>
+        <div class="item">
+            <a href="downloads.html" class="button">Downloads</a>
+        </div>
+        <div class=" item">
+            <a href="Contact.html" class="button">Contact Us</a>
+        </div>
+     </div>   
     <p>Frostbyt3 was originally formed by 3 friends in 2016 under the name: Terabyt3 Games. The group began planning to make a horror game called "Into the Darkness", but plans fell through very early on into development. Terabyt3 Games reorganized and recycled ideas and early versions of code into a new project: The now defunct "What Reality?" thriller/horror game. </p>
     <br>
     <br>
@@ -28,6 +94,6 @@
     <p> largest and current project is our Frostbyt3 Minecraft SMP. This SMP has a long history and lore with many wars and the rise and fall of great empires and nations. </p>
     <br>
     <br>
-    <a href="index.html">Back to Home Page</a>
+    
 </body>
 </html>
